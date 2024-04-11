@@ -1,4 +1,4 @@
-CREATE TABLE merchants (
+CREATE TABLE placeSearchRes (
   id INTEGER NOT NULL PRIMARY KEY,
   placeId VARCHAR(64),
   displayName VARCHAR(128),
@@ -30,6 +30,6 @@ CREATE TABLE hotkeywords (
   updateAt DATETIME
 );
 
-ALTER TABLE customerReviews ADD FOREIGN KEY (merchantId) REFERENCES  merchants(id);
+ALTER TABLE customerReviews ADD FOREIGN KEY (merchantId) REFERENCES  placeSearchRes(id);
 
-ALTER TABLE hotkeywords ADD FOREIGN KEY (merchantId) REFERENCES merchants(id);
+ALTER TABLE hotkeywords ADD FOREIGN KEY (merchantId) REFERENCES placeSearchRes(id);

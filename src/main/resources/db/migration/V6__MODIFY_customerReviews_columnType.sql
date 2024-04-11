@@ -1,0 +1,1 @@
+ALTER TABLE customerReviews MODIFY COLUMN merchantId VARCHAR(64) NOT NULL;

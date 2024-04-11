@@ -1,0 +1,1 @@
+ALTER TABLE customerReviews MODIFY id INT AUTO_INCREMENT;

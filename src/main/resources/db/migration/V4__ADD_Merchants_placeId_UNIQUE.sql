@@ -1,0 +1,8 @@
+ALTER TABLE merchants MODIFY id INT;
+
+ALTER TABLE merchants
+DROP PRIMARY KEY,
+ADD CONSTRAINT placeId_pk PRIMARY KEY (placeId);
+
+ALTER TABLE merchants ADD UNIQUE INDEX idx_id (id);
+ALTER TABLE merchants MODIFY id INT AUTO_INCREMENT;
